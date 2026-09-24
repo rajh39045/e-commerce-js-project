@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MiniShop | Cart</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-icon">
+                M
+            </span>
+
+            <span>
+                MiniShop
+            </span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a
+                href="cart.html"
+                class="active"
+            >
+                Cart
+
+                <span class="cart-badge">
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main class="cart-container">
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================= -->
+
+    <section class="cart-page-header">
+
+        <div>
+
+            <p class="page-label">
+                SHOPPING CART
+            </p>
+
+            <h1>
+                Your Cart
+            </h1>
+
+            <p>
+                Review your products before checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CART CONTENT
+    ========================= -->
+
+    <section class="cart-layout">
+
+
+        <!-- =========================
+             CART ITEMS
+        ========================= -->
+
+        <div
+            id="cartItems"
+            class="cart-items"
+        >
+
+            <!-- Products will be rendered by cart.js -->
+
+        </div>
+
+
+
+        <!-- =========================
+             ORDER SUMMARY
+        ========================= -->
+
+        <aside class="cart-summary">
+
+
+            <!-- SUMMARY HEADER -->
+
+            <div class="summary-header">
+
+                <span>
+                    ORDER SUMMARY
+                </span>
+
+                <span id="summaryCount">
+                    0 items
+                </span>
+
+            </div>
+
+
+
+            <!-- SUBTOTAL -->
+
+            <div class="summary-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="subtotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+
+            <!-- DELIVERY -->
+
+            <div class="summary-row">
+
+                <span>
+                    Delivery
+                </span>
+
+                <strong class="free-text">
+                    FREE
+                </strong>
+
+            </div>
+
+
+
+            <!-- DIVIDER -->
+
+            <div class="summary-divider"></div>
+
+
+
+            <!-- TOTAL -->
+
+            <div class="summary-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="total">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+
+            <!-- CHECKOUT -->
+
+            <button
+                id="checkoutBtn"
+                class="checkout-btn"
+            >
+                Proceed to Checkout
+            </button>
+
+
+
+            <!-- CONTINUE SHOPPING -->
+
+            <a
+                href="products.html"
+                class="continue-shopping"
+            >
+                ← Continue Shopping
+            </a>
+
+
+        </aside>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     CART JS
+========================= -->
+
+<script
+    type="module"
+    src="../js/cart.js"
+></script>
+
+
+</body>
+
+</html>

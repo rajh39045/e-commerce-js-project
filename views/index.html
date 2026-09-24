@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MiniShop | Home</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-icon">
+                M
+            </span>
+
+            <span>
+                MiniShop
+            </span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a
+                href="index.html"
+                class="active"
+            >
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+                Cart
+
+                <span class="cart-badge">
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main class="home-container">
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                WELCOME TO MINISHOP
+            </span>
+
+
+            <h1>
+                Everything You Need,
+                <span>All in One Place.</span>
+            </h1>
+
+
+            <p>
+                Discover quality products, manage your
+                cart and enjoy a simple shopping experience.
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                    href="products.html"
+                    class="hero-primary-btn"
+                >
+                    Shop Now →
+                </a>
+
+
+                <a
+                    href="products.html"
+                    class="hero-secondary-btn"
+                >
+                    Explore Products
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual">
+
+            <div class="hero-circle">
+
+                <div class="hero-card">
+
+                    <span class="hero-card-icon">
+                        🛍️
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            MiniShop
+                        </strong>
+
+                        <p>
+                            Simple. Fast. Easy.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-one">
+                    ⚡ Fast Shopping
+                </div>
+
+
+                <div class="floating-card card-two">
+                    🛒 Easy Cart
+                </div>
+
+
+                <div class="floating-card card-three">
+                    ⭐ Quality Products
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURES
+    ========================== -->
+
+    <section class="features-section">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🛒
+            </div>
+
+            <h3>
+                Easy Shopping
+            </h3>
+
+            <p>
+                Browse products and add them
+                to your cart with ease.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🔍
+            </div>
+
+            <h3>
+                Find Products
+            </h3>
+
+            <p>
+                Search, filter and sort products
+                quickly.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🔐
+            </div>
+
+            <h3>
+                Your Account
+            </h3>
+
+            <p>
+                Create an account and manage
+                your shopping experience.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     MAIN JS
+========================= -->
+
+<script
+    type="module"
+    src="../js/main.js"
+></script>
+
+
+<!-- =========================
+     COMMON NAVBAR JS
+========================= -->
+
+<script type="module">
+
+    import {
+        updateNavbar,
+        updateCartBadge
+    } from "../js/utils.js";
+
+
+    updateNavbar();
+
+    updateCartBadge();
+
+</script>
+
+
+</body>
+
+</html>

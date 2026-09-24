@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MiniShop | Products</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ============================= -->
+<!-- NAVBAR -->
+<!-- ============================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-icon">
+                M
+            </span>
+
+            <span>
+                MiniShop
+            </span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="products.html"
+                class="active"
+            >
+                Products
+            </a>
+
+            <a href="cart.html">
+
+                Cart
+
+                <span class="cart-badge">
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ============================= -->
+<!-- MAIN -->
+<!-- ============================= -->
+
+<main class="products-container">
+
+
+    <!-- ============================= -->
+    <!-- PAGE HEADER -->
+    <!-- ============================= -->
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="page-label">
+                MINI E-COMMERCE
+            </p>
+
+            <h1>
+                Product Management
+            </h1>
+
+            <p class="page-description">
+                Manage your products, inventory and pricing
+                from one simple dashboard.
+            </p>
+
+        </div>
+
+
+        <div class="product-count-box">
+
+            <span class="count-icon">
+                🛍️
+            </span>
+
+            <div>
+
+                <span class="count-label">
+                    Products
+                </span>
+
+                <strong id="productCount">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ============================= -->
+    <!-- ADD PRODUCT -->
+    <!-- ============================= -->
+
+    <section class="product-form-card">
+
+        <div class="form-header">
+
+            <div>
+
+                <span class="form-icon">
+                    +
+                </span>
+
+                <div>
+
+                    <p class="form-label">
+                        PRODUCT MANAGEMENT
+                    </p>
+
+                    <h2>
+                        Add Product
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <form id="productForm">
+
+
+            <!-- NAME -->
+
+            <div class="input-group">
+
+                <label for="name">
+                    Product Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="e.g. Wireless Headphones"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PRICE -->
+
+            <div class="input-group">
+
+                <label for="price">
+                    Price
+                </label>
+
+                <div class="input-with-symbol">
+
+                    <span>
+                        ₹
+                    </span>
+
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="1499"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CATEGORY -->
+
+            <div class="input-group">
+
+                <label for="category">
+                    Category
+                </label>
+
+                <input
+                    type="text"
+                    id="category"
+                    placeholder="e.g. Electronics"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- STOCK -->
+
+            <div class="input-group">
+
+                <label for="stock">
+                    Stock
+                </label>
+
+                <input
+                    type="number"
+                    id="stock"
+                    placeholder="20"
+                    min="0"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- RATING -->
+
+            <div class="input-group">
+
+                <label for="rating">
+                    Rating
+                </label>
+
+                <input
+                    type="number"
+                    id="rating"
+                    placeholder="4.5"
+                    step="0.1"
+                    min="0"
+                    max="5"
+                >
+
+            </div>
+
+
+
+            <!-- IMAGE -->
+
+            <div class="input-group">
+
+                <label for="image">
+                    Image URL
+                </label>
+
+                <input
+                    type="text"
+                    id="image"
+                    placeholder="https://example.com/image.jpg"
+                >
+
+            </div>
+
+
+
+            <!-- DESCRIPTION -->
+
+            <div class="input-group full-width">
+
+                <label for="description">
+                    Description
+                </label>
+
+                <textarea
+                    id="description"
+                    placeholder="Write a short description about the product..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <div class="form-actions full-width">
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+
+                    <span>
+                        +
+                    </span>
+
+                    Add Product
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- ============================= -->
+    <!-- PRODUCT SECTION -->
+    <!-- ============================= -->
+
+    <section class="products-section">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="section-label">
+                    INVENTORY
+                </p>
+
+                <h2>
+                    All Products
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SEARCH / FILTER / SORT -->
+
+        <div class="product-tools">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+            </div>
+
+
+
+            <!-- CATEGORY -->
+
+            <select id="categoryFilter">
+
+                <option value="">
+                    All Categories
+                </option>
+
+            </select>
+
+
+
+            <!-- PRICE SORT -->
+
+            <select id="sortPrice">
+
+                <option value="">
+                    Sort by Price
+                </option>
+
+                <option value="low">
+                    Price: Low → High
+                </option>
+
+                <option value="high">
+                    Price: High → Low
+                </option>
+
+            </select>
+
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+
+        <div
+            id="productList"
+            class="product-grid"
+        ></div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ============================= -->
+<!-- JAVASCRIPT -->
+<!-- ============================= -->
+
+<script
+    type="module"
+    src="../js/products.js"
+></script>
+
+
+</body>
+
+</html>

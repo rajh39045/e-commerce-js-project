@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MiniShop | Register</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-icon">
+                M
+            </span>
+
+            <span>
+                MiniShop
+            </span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+
+                Cart
+
+                <span class="cart-badge">
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     REGISTER
+========================= -->
+
+<main class="auth-container">
+
+    <section class="auth-card">
+
+
+        <!-- HEADER -->
+
+        <div class="auth-header">
+
+            <div class="auth-icon">
+                +
+            </div>
+
+            <p class="page-label">
+                MINISHOP ACCOUNT
+            </p>
+
+            <h1>
+                Create Account
+            </h1>
+
+            <p>
+                Create your account and start shopping.
+            </p>
+
+        </div>
+
+
+
+        <!-- REGISTER FORM -->
+
+        <form id="registerForm">
+
+
+            <!-- NAME -->
+
+            <div class="input-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="input-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="input-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Minimum 6 characters"
+                    autocomplete="new-password"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <button
+                type="submit"
+                class="primary-btn auth-btn"
+            >
+                Create Account
+            </button>
+
+        </form>
+
+
+
+        <!-- LOGIN LINK -->
+
+        <p class="auth-footer">
+
+            Already have an account?
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </p>
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================
+     REGISTER JS
+========================= -->
+
+<script
+    type="module"
+    src="../js/register.js"
+></script>
+
+
+</body>
+
+</html>

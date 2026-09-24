@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MiniShop | Product Details</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-icon">
+                M
+            </span>
+
+            <span>
+                MiniShop
+            </span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a
+                href="cart.html"
+                class="cart-link"
+            >
+                Cart
+
+                <span class="cart-badge">
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main class="details-container">
+
+    <!-- =========================
+         BACK BUTTON
+    ========================== -->
+
+    <a
+        href="products.html"
+        class="back-link"
+    >
+        ← Back to Products
+    </a>
+
+
+    <!-- =========================
+         PRODUCT DETAILS
+    ========================== -->
+
+    <section
+        id="productDetails"
+        class="product-details-card"
+    >
+
+        <div class="details-loading">
+
+            <div class="loading-spinner"></div>
+
+            <p>
+                Loading product...
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- PRODUCT DETAILS JS -->
+
+<script
+    type="module"
+    src="../js/details.js"
+></script>
+
+
+<!-- COMMON NAVBAR JS -->
+
+<script type="module">
+
+    import {
+        updateNavbar,
+        updateCartBadge
+    } from "../js/utils.js";
+
+
+    updateNavbar();
+
+    updateCartBadge();
+
+</script>
+
+</body>
+
+</html>

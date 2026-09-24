@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MiniShop | Login</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-icon">
+                M
+            </span>
+
+            <span>
+                MiniShop
+            </span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+                Cart
+
+                <span class="cart-badge">
+                    0
+                </span>
+
+            </a>
+
+            <a
+                href="login.html"
+                class="active"
+            >
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     LOGIN
+========================= -->
+
+<main class="auth-container">
+
+    <section class="auth-card">
+
+        <!-- HEADER -->
+
+        <div class="auth-header">
+
+            <div class="auth-icon">
+                →
+            </div>
+
+            <p class="page-label">
+                WELCOME BACK
+            </p>
+
+            <h1>
+                Login
+            </h1>
+
+            <p>
+                Login to continue shopping.
+            </p>
+
+        </div>
+
+
+        <!-- LOGIN FORM -->
+
+        <form id="loginForm">
+
+            <!-- EMAIL -->
+
+            <div class="input-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div class="input-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+
+            <!-- LOGIN BUTTON -->
+
+            <button
+                type="submit"
+                class="primary-btn auth-btn"
+            >
+                Login
+            </button>
+
+        </form>
+
+
+        <!-- REGISTER LINK -->
+
+        <p class="auth-footer">
+
+            Don't have an account?
+
+            <a href="register.html">
+                Create Account
+            </a>
+
+        </p>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     LOGIN JS
+========================= -->
+
+<script
+    type="module"
+    src="../js/login.js"
+></script>
+
+
+<!-- =========================
+     COMMON NAVBAR JS
+========================= -->
+
+<script type="module">
+
+    import {
+        updateNavbar,
+        updateCartBadge
+    } from "../js/utils.js";
+
+
+    updateNavbar();
+
+    updateCartBadge();
+
+</script>
+
+
+</body>
+
+</html>

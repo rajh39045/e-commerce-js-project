@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "name": "slipper",
+      "price": 1500,
+      "category": "FashionXGirl",
+      "stock": 8,
+      "rating": 5,
+      "image": "https://th.bing.com/th/id/OIP.yX9Jt27rBmqWOYHwegPzXQHaE8?w=329&h=183&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+      "description": "comfertable to use",
+      "id": "C9xOnPw5F8I"
+    },
+    {
+      "name": "slipper",
+      "price": 1500,
+      "category": "FashionXGirl",
+      "stock": 8,
+      "rating": 5,
+      "image": "https://th.bing.com/th/id/OIP.yX9Jt27rBmqWOYHwegPzXQHaE8?w=329&h=183&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+      "description": "comfertable to use",
+      "id": "ZngOezebJ3I"
+    },
+    {
+      "name": "cat",
+      "price": 15000,
+      "category": "Animal",
+      "stock": 2,
+      "rating": 5,
+      "image": "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?cs=srgb&dl=adorable-animal-animal-photography-1170986.jpg&fm=jpg",
+      "description": "love",
+      "id": "q_2jPdzz6BU"
+    }
+  ],
+  "users": [
+    {
+      "name": "Harsh Raj",
+      "email": "vu.241fa04f26@gmail.com",
+      "password": "123456",
+      "role": "customer",
+      "id": "lK47m61LQbA"
+    },
+    {
+      "name": "user k",
+      "email": "user@gmail.com",
+      "password": "123456",
+      "role": "customer",
+      "id": "QwzazOTKGHg"
+    }
+  ],
+  "orders": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
